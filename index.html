@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CampusDemo">
+<head>
+	<meta charset="utf-8" />
+	<title>Campus Demo</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Nikhil Mishra" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name = "format-detection" content = "telephone=no" />
+	<!-- APPLE MOBILE WEB APPP CONTROLS -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<!-- <meta name="apple-itunes-app" content="app-id=466079030"/> -->
+	<link rel="apple-touch-startup-image" href="" />
+	<link rel="apple-touch-icon-precomposed" href="" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="#" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="#" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="#" />
+	<!--Common CSS-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/less" href="css/style.less"/>
+	<!--App specific CSS-Load on runtime..-->
+	<link rel="stylesheet" type="text/less" href="apps/facebook/style.less"/>
+	<link rel="stylesheet" type="text/less" href="apps/rssfeed/style.less"/>	
+</head>
+<body>
+<div class="container">
+ <div class="row">
+    <div class="col-md-6"><a href="#/rssFeed">RSS</a></div>
+    <div class="col-md-6"><a href="#/facebook">Facebook</a></div>
+    <div id="content" ng-view></div>
+   </div>
+ </div>
+ <div class="row">
+ <div class="col-md-6">
+<address>
+  <strong>LetsGoMo Labs</strong><br>
+  795 Folsom Ave, Suite 600<br>
+  San Francisco, CA 94107<br>
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+</div>
+<div class="col-md-6">
+<address>
+  <strong>Full Name</strong><br>
+  <a href="mailto:#">nikhil@letsgomo.com</a>
+</address>
+ </div>
+ </div>
+</body>
+<!--CORE libs-->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/core/angular.js"></script>
+	<script type="text/javascript" src="js/core/angular-route.js"></script>
+	<script type="text/javascript" src="js/core/less.js"></script>
+		<script type="text/javascript" src="js/core/bootstrap.js"></script>
+	<!--CORE app files-->
+	<script type="text/javascript" src="js/app/app.js"></script>
+	<script type="text/javascript" src="js/app/directives.js"></script>
+	<script type="text/javascript" src="js/app/app_routes.js"></script>
+	<!--CORE config settings and page specific JS-->
+	<!--App specific libs-->
+	<script type="text/javascript" src="apps/facebook/app.js"></script>
+	<script type="text/javascript" src="apps/rssfeed/app.js"></script>
+</html>
