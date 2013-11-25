@@ -13,5 +13,4 @@ campusControllers.controller('rssFeedController', ['$scope', '$http',
   	  	$scope.rssFeed=data;
   	  	console.log($scope);
     });
-  	 
   }]);
