@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app>
+  <head>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div ng-controller="Ctrl">
+      <select ng-model="template" ng-options="t.name for t in templates">
+       <option value="">(blank)</option>
+      </select>
+      url of the template: <tt>{{template.url}}</tt>
+      <hr/>
+      <div ng-include src="template.url"></div>
+    </div>
+  </body>
+</html>
